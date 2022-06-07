@@ -18,4 +18,10 @@ def first
 end
 
 def middle
+  middle = ""
+  middle << "\n"
+  middle << "\n"
+  middle << "\n"
+  middle << "\n"
+  middle << "\n"
 end
