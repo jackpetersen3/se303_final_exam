@@ -42,4 +42,6 @@ class Farm
     total
   end
 
+  def drop_plot_name(total)
+  end
 end
