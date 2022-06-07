@@ -10,28 +10,32 @@ class Story
     @conclusion = conclusion
   end
 
-  def split_size
+  def word_count
     @beginning.split.size +
     @middle.split.size +
     @conclusion.split.size
   end
 
-  def split 
+  def letter_count
     @beginning.size + @middle.size + @conclusion.size
+  end
+
+  def period_count
+    @beginning.scan(/\./).size +
+    @middle.scan(/\./).size +
+    @conclusion.scan(/\./).size
   end
 end
 
 
 def word_count(beginning, middle, conclusion)
-  Story.new(beginning, middle, conclusion).split_size
+  Story.new(beginning, middle, conclusion).word_count
 end
 
 def letter_count(beginning, middle, conclusion)
-  Story.new(beginning, middle, conclusion).split
+  Story.new(beginning, middle, conclusion).letter_count
 end
 
 def period_count(beginning, middle, conclusion)
-  beginning.scan(/\./).size +
-  middle.scan(/\./).size +
-  conclusion.scan(/\./).size
+  Story.new(beginning, middle, conclusion).period_count
 end
