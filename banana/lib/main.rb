@@ -27,7 +27,7 @@ def word_count(beginning, middle, conclusion)
 end
 
 def letter_count(beginning, middle, conclusion)
-  beginning.size + middle.size + conclusion.size
+  Story.new(beginning, middle, conclusion).split
 end
 
 def period_count(beginning, middle, conclusion)
