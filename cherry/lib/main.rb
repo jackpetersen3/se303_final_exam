@@ -16,8 +16,21 @@ def total_and_smallest
 end
 
 def total(data)
+  total = 0
+  data.each do |d|
+    total += d 
+  end
+  total
 end
+
 def smallest(data)
+  smallest = data.first
+  data.each do |d|
+    if d < smallest
+      smallest = d
+    end
+  end
+  smallest 
 end
 
 
