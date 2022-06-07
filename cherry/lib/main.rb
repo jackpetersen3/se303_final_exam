@@ -15,6 +15,11 @@ def total_and_smallest
   [total, smallest]
 end
 
+def total(data)
+end
+def smallest(data)
+end
+
 
 # Apply the "replace loop with pipeline" refactoring.
 
