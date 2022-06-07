@@ -4,6 +4,11 @@
 #       write.
 
 class story
+  def initialize(beginning, middle, end)
+    @beginning = beginning
+    @middle = middle
+    @conclusion = conclusion
+  end
 end
 def word_count(beginning, middle, conclusion)
   beginning.split.size +
