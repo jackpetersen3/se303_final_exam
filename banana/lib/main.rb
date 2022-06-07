@@ -15,13 +15,14 @@ class Story
     @middle.split.size +
     @conclusion.split.size
   end
+
+  def split 
+    @beginning.size + @middle.size + @conclusion.size
+  end
 end
 
 
 def word_count(beginning, middle, conclusion)
-  # beginning.split.size +
-  # middle.split.size +
-  # conclusion.split.size
   Story.new(beginning, middle, conclusion).split_size
 end
 
