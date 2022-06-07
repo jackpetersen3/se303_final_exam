@@ -35,4 +35,7 @@ def repeat
     result += data[i]
   end
   result
+
+  # data.map { |word, result| result += word }
+  # result
 end
