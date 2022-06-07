@@ -12,3 +12,7 @@ def story
   conclusion = "And that was it."
   first + middle + conclusion
 end
+
+def first
+  first = "Mr. Dursley was the director of a firm called Grunnings, which made drills."
+end
