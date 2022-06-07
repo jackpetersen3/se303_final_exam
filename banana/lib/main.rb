@@ -3,8 +3,8 @@
 # Hint: Let the existing functions use the new code that you
 #       write.
 
-class story
-  def initialize(beginning, middle, end)
+class Story
+  def initialize(beginning, middle, conclusion)
     @beginning = beginning
     @middle = middle
     @conclusion = conclusion
@@ -19,9 +19,10 @@ end
 
 
 def word_count(beginning, middle, conclusion)
-  beginning.split.size +
-  middle.split.size +
-  conclusion.split.size
+  # beginning.split.size +
+  # middle.split.size +
+  # conclusion.split.size
+  Story.new(beginning, middle, conclusion).split_size
 end
 
 def letter_count(beginning, middle, conclusion)
