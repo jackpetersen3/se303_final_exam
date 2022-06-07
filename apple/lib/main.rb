@@ -25,3 +25,7 @@ def middle
   middle << "\n"
   middle << "\n"
 end
+
+def conclusion
+  conclusion = "And that was it."
+end
